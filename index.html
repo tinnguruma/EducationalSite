@@ -4,27 +4,28 @@
 </head>
 
 <body>
-    <h1>このサイトは非常に教育的なサイトです。</h1>
+    <h1>4月体温入力一括入力じゃい！</h1>
+    <label>URL<input type="text" id="number">https://www.google.com</label>
+    <br>
     <label><input type="button" value="素晴らしいボタン" id="Go"></label>
     <p id="msg"></p>
-    <p id="msg1"></p>
     <script type="text/javascript">
+    
         function buttonClick() {
-            document.getElementById("ifr1").src = "https://www.google.com/search?q=%E3%81%82";
-            document.getElementById("ifr2").src = "https://www.twitter.com/";
-            document.getElementById("ifr3").src = "https://nicovideo.jp/";
-            document.getElementById("ifr4").src = "https://google.com/";
-            document.getElementById("ifr5").src = "https://google.com/";
+            msg.innerText = 'URL' + element.value;
+            document.getElementById("ifr1").src = "" + element.value + "&entry.940536584=" + element1.value + "&entry.434616886=";
         }
+        let msg = document.getElementById('msg');
+        
+        let element = document.getElementById('number');
+        element.value = ""
         
         let element2 = document.getElementById('Go');
         element2.addEventListener('click', buttonClick);
     </script>
-    <iframe src="" id="ifr1" width="750" height="600"></iframe><br>
-    <iframe src="" id="ifr2" width="750" height="600"></iframe><br>
-    <iframe src="" id="ifr3" width="750" height="600"></iframe><br>
-    <iframe src="" id="ifr4" width="750" height="600"></iframe><br>
+    <iframe src="" id="ifr1" width="250" height="200"></iframe>
     <br>
+    
 <!-- admax -->
 <script src="https://adm.shinobi.jp/s/c88878e1d79594bda5ed00b1a464c9e7"></script>
 <script src="https://adm.shinobi.jp/s/c88878e1d79594bda5ed00b1a464c9e7"></script>
